@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Roberto Esteban Olivares</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/estilos.css">
+     <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
+    <script src="js/myscript.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+   <script>
+    $(function () {
+	var inputs = $(".input");
+	var paras = $(".description-flex-container").find("p");
+	inputs.click(function () {
+		var t = $(this),
+			ind = t.index(),
+			matchedPara = paras.eq(ind);
+
+		t.add(matchedPara).addClass("active");
+		inputs.not(t).add(paras.not(matchedPara)).removeClass("active");
+	});
+});
+
+    </script>
+    <header>
+        <a class="logo" href="index.html" id="logo"><img src="img/LogoRoberto.png" width="100" height="100" > </a> 
+		<div class="contenedor">
+            
+			<nav class="menu">
+				<a href="#sobre-mi">Sobre mí</a>
+				<a href="#laboral">Entorno Laboral</a>
+				<a href="#educacion">Educación</a>
+                <a href="#proyecto">Proyectos</a>
+                <a href="#cursos">Cursos</a>
+                <a href="#contacto">Contacto</a>
+			</nav>
+			
+			<div class="contenedor-texto">
+				<div class="texto">
+					<h1 class="nombre">Roberto Esteban Olivares</h1>
+					<h2 class="profesion">Administrador de Sistemas y Redes</h2>
+				</div>
+			</div>
+            
+		</div>
+	</header>
+    <section class="main">
+		<section name="sobre-mi" id="sobre-mi" class="sobre-mi">
+			<div class="contenedor">
+				<div class="foto">
+					<img src="img/Foto.jpeg" width="115" height="115" alt="Roberto Esteban">
+				</div>
+			
+				<div class="texto">
+					<h3 class="titulo">Sobre Mi</h3>
+					<p>Mi nombre es Roberto actualmente estudiante de <span class="bold">Ingeniería Informática en la UCLM</span>. Soy un chico capaz de modificar el enfoque sobre diferentes ideas,así como capaz de <span class="bold"> trabajar en equipo</span>,planificar y organizar diferentes tareas para llevarlo todo al día.</p>
+				</div>
+			</div>
+		</section>
+    <section name="laboral" id="laboral" class="laboral">
+			<div class="contenedor">
+				<h3 class="titulo">Experiencia Laboral</h3>
+						
+				<div class="contenedor-laboral">
+					<div class="laboral">
+						<div class="thumb">
+							<img src="img/hugo.jpg" alt="Hugo Gómez Ramos">
+						</div>
+						<div class="descripcion">
+							<p class="nombre">Empresa:Hugo Gómez Ramos</p>
+							<p class="categoria">Prácticas. Amplios Conocimientos en Google Kubernetes, así como la implementación continua.</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+        <section name="educacion" id="educacion" class="educacion">
+			<h1>Educación <span></span></h1>
+            
+<div class="flex-parent">
+	<div class="input-flex-container">
+		<div class="input">
+			<span data-year="2015-2017" data-info="Bachillerato"></span>
+		</div>
+		<div class="input">
+			<span data-year="2017-2019" data-info="Grado Superior"></span>
+		</div>
+		<div class="input active">
+			<span data-year="2019-Actualmente" data-info="Grado Universitario"></span>
+		</div>
+		
+		
+
+	</div>
+	<div class="description-flex-container">
+		<p>Bachillerato Modalidad de Ciencias. IES Arenales del Tajo, Cebolla(Toledo).</p>
+		<p>Técnico Superior en Administración de Sistemas Informáticos y Redes. IES Riberal del Tajo, Talavera de la Reina (Toledo).</p>
+		<p class="active">Actualmente Cursando Grado en Ingeniería Informática. En la UCLM, Facultad de Ciencias Sociales de Talavera de la Reina</p>
+	</div>
+</div>
+
+
+
+            <div style="position: absolute; bottom: 40px; right: 10px; font-size: 12px"></div>
+	
+<div style="position: absolute; bottom: 15px; right: 10px; font-size: 12px"></div>
+	
+<div style="position: absolute; bottom: 15px; left: 10px; font-size: 18px; font-weight: bold"></div>
+	
+		</section>
+        <br>
+        <br>
+         <section name="proyecto" id="proyecto" class="proyectos">
+			<div class="contenedor">
+				 <div class="container">
+    <h2 class="text-center">Proyectos Realizados</h2>
+    <div class="lightbox-gallery">
+        <div><a title="Eda" href="https://github.com/RobertoEstebanOlivares/Estructura-de-datos-lineales"><img src="img/eda.jpg" width="200" height="150"  alt="Trabajo Estructura de datos Lineales"></a>
+        <p>Practica de Estructura de datos Lineales</p>
+        </div>
+         <div><a title="Eda" href="https://github.com/RobertoEstebanOlivares/EdaNoLineales"><img src="img/eda2.jpg" width="200" height="150"  alt="Trabajo Estructura de datos No Lineales"></a>
+        <p>Practica de Estructura de datos No Lineales</p>
+        </div>
+         <div><a title="Eda" href="https://github.com/RobertoEstebanOlivares/ProyectoProgramacionII"><img src="img/otro.jpg" width="200" height="150"  alt="Trabajo Programacion II"></a>
+        <p>Practica de Programación II</p>
+        </div>
+    </div>
+  </div>
+
+			</div>
+		</section>
+        <section name="cursos" id="cursos" class="cursos">
+			<div class="contenedor">
+				<h3 class="titulo">Cursos realizados</h3>
+						
+				<div class="contenedor-cursos">
+					<div class="cursos">
+						<ol id="lista5">
+                            <li>Curso Maestro de Python 3: Aprende desde Cero, Udemy Academy</li>
+                            <li>Diseño Web Profesional El curso Completo, Práctico y desde 0</li>
+                            <li>Hacking Ético para Redes y Comunicaciones</li> 
+                            <li>Técnico Reparador de Teléfonos Moviles, Camara de Comercio</li>
+                        </ol>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+        
+        
+        
+	</section>
+    
+<footer>
+    <div class="contenedor">
+			<section name="contacto" id="contacto"  class="contacto">
+				<h3 class="titulo">Contacto</h3>
+                    <div class="texto">
+				    <p>Correo electrónico: <span class="bold">robertoestebanolivares@gmail.com</span></p>
+                    <p>NºTeléfono: <span class="bold">691 580 966</span></p>
+                    <p>Descargar CV:</p>
+                        <a class="logo" href="CV_RobertoEsteban.pdf" id="logo"><img src="img/pdf2.png" width="100" height="100" > </a> 
+                        </div>
+			</section>
+		</div>
+            <section class="redes-sociales">
+			<div class="contenedor">
+                <a class="Linkedin" href="https://www.linkedin.com/in/roberto-esteban-olivares/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+				<a class="github" href="https://github.com/RobertoEstebanOlivares"><i class="fa fa-github"></i></a>
+				
+			</div>
+                 <h2 class="design">Design by Roberto Esteban Olivares</h2>
+		</section>
+   
+	</footer>
+</body>
+</html>
